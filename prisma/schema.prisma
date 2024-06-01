@@ -8,11 +8,6 @@ datasource db {
   directUrl = env("DIRECT_URL")
 }
 
-model testing {
-  id   Int    @id @default(autoincrement())
-  name String
-}
-
 model user {
   id                Int      @id @default(autoincrement())
   created_time      DateTime @default(now())
